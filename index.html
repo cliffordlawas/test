@@ -1,74 +1,278 @@
 <html>
-
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-	<title>Legal Match </title>
-	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
-	<link type="text/css" rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-	<section class="header">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-7">
-					<div class="logo-wrapper">
-						<a href="#"><div class="logo"></div></a>
-						<a href="#"><div class="logo-sub">FIND THE RIGHT LAWYER NOW</div></a>
-					</div>
-				</div>
-				<div class="col-sm-5 ">
-					<ul class="checklist pull-right">
-						<li>No fee to present your case</li>
-						<li>Choose from lawyers in your area </li>
-						<li>A 100% confidential service</li>
-
-					</ul>
-				</div>
-			</div>
-		
-		</div>
-	</section>
-	<section class="body">
-		<div class="container">
-			<div class="body-caption">
-				<h1>Find a Lawyer for your Legal Issue</h1>
-				<h3>Fast, Free and Confidential</h3>
-			</div>
-			<div class="row">
-				<div class="col-sm-6">
-						<h5 class="title-spacer">Enter Zip Code or City:</h5>
-						<div class="form-wrapper">
-							<div class="icon">1</div>
-							<input type="text" class="form-control form-custom" placeholder = "Does not have to be where you live">
-						</div>
-						<br/>
-						<h5 >Choose Category:</h5>
-						<div class="form-wrapper">
-							<div class="icon">2</div>
-							<input type="text" class="form-control form-custom" placeholder = "Click to choose a legal category">
-						</div>
-				</div>
-				<div class="col-sm-6"></div>
-			</div>
-		</div>
-
-
-	</section>
-
-		<section class="footer">
-
-
-
-		</section>
-
-
-
-
-
-</body>
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/custom.js"></script>
-	<script type="text/javascript"></script>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+      <title>Legal Match </title>
+      <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+      <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
+      <link type="text/css" rel="stylesheet" href="css/style.css" />
+   </head>
+   <body>
+      <section class="header">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-7">
+                  <div class="logo-wrapper">
+                     <a href="#">
+                        <div class="logo"></div>
+                     </a>
+                     <a href="#">
+                        <div class="logo-sub">FIND THE RIGHT LAWYER NOW</div>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-sm-5 ">
+                  <ul class="checklist pull-right pull-right-custom">
+                     <li>No fee to present your case</li>
+                     <li>Choose from lawyers in your area </li>
+                     <li>A 100% confidential service</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="body">
+         <div class="container">
+            <div class="body-caption">
+               <h1>Find a Lawyer for your Legal Issue</h1>
+               <h3>Fast, Free and Confidential</h3>
+            </div>
+            <div class="row">
+               <div class="col-sm-6 body-caption">
+                  <h5 class="title-spacer">Enter Zip Code or City:</h5>
+                  <div class="form-wrapper" id="auto">
+                     <div class="icon">1</div>
+                     <input type="text" id="autoComplete" class="form-control form-custom" placeholder = "Does not have to be where you live">
+                  </div>
+                  <br/><br/>
+                  <h5 >Choose Category:</h5>
+                  <div class="form-wrapper" id="category">
+                     <div class="icon">2</div>
+                     <input type="text" id="selectCategory" class="form-control form-custom" placeholder = "Click to choose a legal category">
+                     <div class="icon icon-drop">V</div>
+                  </div>
+                  <div class="text-center">
+                     <br/>
+                     <h5 class="font2">Can't Find your category? <a href="#" id="cantfind" class="link-w">Click Here</a></h5>
+                  </div>
+               </div>
+               <div class="col-sm-1"></div>
+               <div class="col-sm-5">
+                  <h3 class="body-caption-2">Client review LegalMatch lawyers</h3>
+                  <br/>
+                  <div class="profile-reviews">
+                     <div class="row">
+                        <div class="col-sm-3 text-center">
+                           <div class="profile-image"></div>
+                           <h5>Mitchell M.</h5>
+                           <h6 class="caption-2">Cherry Hill, NJ</h6>
+                        </div>
+                        <div class="col-sm-9">
+                           <h5>Family Law <span class="stars ">&#9733; &#9733; &#9733; &#9733; &#9733;</span></h5>
+                           <p class="profile-review-detail">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...</p>
+                           <a href="#" id="btn-full" class="btn-read pull-right ">
+                              Read Full Review 
+                              <div class="book-open"></div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="profile-reviews">
+                     <div class="row">
+                        <div class="col-sm-3 text-center">
+                           <div class="profile-image image-2"></div>
+                           <h5>Joel C.</h5>
+                           <h6 class="caption-2">Little Rock, AC</h6>
+                        </div>
+                        <div class="col-sm-9">
+                           <h5>Job Employment Law <span class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span></h5>
+                           <p class="profile-review-detail">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...</p>
+                           <a href="#" class="btn-read pull-right">
+                              Read Full Review 
+                              <div class="book-open"></div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="profile-reviews">
+                     <div class="row">
+                        <div class="col-sm-3 text-center">
+                           <div class="profile-image image-3"></div>
+                           <h5>Brigada R.</h5>
+                           <h6 class="caption-2">Cherry Hill, NJ</h6>
+                        </div>
+                        <div class="col-sm-9">
+                           <h5>Family Law<span class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span></h5>
+                           <p class="profile-review-detail">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...</p>
+                           <a href="#" class="btn-read pull-right">
+                              Read Full Review 
+                              <div class="book-open"></div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+      </section>
+      <section class="footer">
+         <div class="container">
+            <div class="col-sm-3">
+               <a href="#">
+                  <div class="footer-image footer-logo"></div>
+               </a>
+            </div>
+            <div class="col-sm-6 text-center">
+               <ul class="footer-terms ">
+                  <li><a href="#">User Agreement</a></li>
+                  <li><a href="#">Privacy Policy </a></li>
+                  <li><a href="#">Site Map</a></li>
+               </ul>
+               <div class="footer-copy">
+                  <div class="text-grey">Copyright 1999-2016 LegalMatch. All rights reserved. Legal Match </div>
+                  <div class="text-grey">the LegalMatch logo, and the traderess are trademarks of LegalMatch. Patents Pending.</div>
+               </div>
+            </div>
+            <div class="col-sm-3">
+               <div class="footer-bundle">
+                  <a href="#" >
+                     <div class="footer-image footer-trust"></div>
+                  </a>
+                  <a href="#">
+                     <div class="footer-image footer-bbb"></div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div class="modal fade" id="myModal" role="dialog" >
+         <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  &nbsp;  <i class="icon icon-p0">3</i>
+                  <h4 class="modal-title">
+                     Which <span id="title">Family law</span> issue(s) apply to your case?
+                  </h4>
+               </div>
+               <div class="modal-body row">
+                  <div class="col-xs-6">
+                     <div class="choices"><input type="checkbox" name="vehicle" value="Bike" id="lorem"> <label for="lorem">Lorem<br></div>
+                     <div class="choices"><input type="checkbox" name="vehicle" value="Bike" id="lorem"> <label for="lorem">Lorem<br></div>
+                     <div class="choices"><input type="checkbox" name="vehicle" value="Bike" id="lorem"> <label for="lorem">Lorem<br></div>
+                     <div class="choices"><input type="checkbox" name="vehicle" value="Bike" id="lorem"> <label for="lorem">Lorem<br></div>
+                  </div>
+                  <div class="col-xs-6">
+                     <div class="choices"><input type="checkbox" name="vehicle" value="Bike" id="lorem"> <label for="lorem">Lorem<br></div>
+                     <div class="choices"><input type="checkbox" name="vehicle" value="Bike" id="lorem"> <label for="lorem">Lorem<br></div>
+                     <div class="choices"><input type="checkbox" name="vehicle" value="Bike" id="lorem"> <label for="lorem">Lorem<br></div>
+                     <div class="choices"><input type="checkbox" name="vehicle" value="Bike" id="lorem"> <label for="lorem">Lorem<br></div>
+                  </div>
+                  <div class="col-xs-12">
+                     <br/>
+                     <div class="text-center">
+                        <button type="button" class="btn btn-custom" data-dismiss="modal">FIND A LAWYER NOW</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal fade" id="clientModal" role="dialog" >
+         <div class="modal-dialog ">
+            <!-- Modal content-->
+            <div class="modal-content modal-btn">
+               <div >
+                  <button type="button" class="close modal-btn" data-dismiss="modal">&times;</button>
+                  &nbsp;
+                  <h4 class="modal-custom-title">
+                     CLIENT REVIEWS
+                  </h4>
+               </div>
+               <div class="modal-body row null-padding-top">
+                  <hr/>
+                  <div class="col-sm-3 null-padding">
+                     <div class="profile-image image-3"></div>
+                  </div>
+                  <div class="col-sm-9 null-padding">
+                     <h3 class="margin-2">Brigada R.</h3>
+                     <h6>Dallas, TX</h6>
+                     <h6><b>Family Law</b></h6>
+                  </div>
+                  <hr/>
+               </div>
+               <div class="modal-body row null-padding-top">
+                  <h3>Rating (29 users)  <span class="stars null-margin">&#9733; &#9733; &#9733; &#9733; </span> <span class="stars-grey">&#9733;</span></h3>
+                  <hr/>
+                  <div class="modal-scroll">
+                     <div class="row">
+                        <div class= "col-sm-7"><b>Overall</b></div>
+                        <div class= "col-sm-5"><span class="stars ">&#9733; &#9733; &#9733; &#9733; &#9733;</span></div>
+                     </div>
+                     <div class="row">
+                        <div class= "col-sm-7">Lorem Ipsum</div>
+                        <div class= "col-sm-5"><span class="stars ">&#9733; &#9733; &#9733; &#9733; &#9733;</span></div>
+                     </div>
+                     <div class="row">
+                        <div class= "col-sm-7">Sample </div>
+                        <div class= "col-sm-5"><span class="stars ">&#9733; &#9733; &#9733; &#9733; &#9733;</span></div>
+                     </div>
+                     <div class="row">
+                        <div class= "col-sm-7">Overall</div>
+                        <div class= "col-sm-5"><span class="stars ">&#9733; &#9733; &#9733; &#9733; &#9733;</span></div>
+                     </div>
+                     <div class="row">
+                        <div class= "col-sm-7">Overall</div>
+                        <div class= "col-sm-5"><span class="stars ">&#9733; &#9733; &#9733; &#9733; &#9733;</span></div>
+                     </div>
+                     <div class="row">
+                        <div class= "col-sm-7">Overall</div>
+                        <div class= "col-sm-5"><span class="stars ">&#9733; &#9733; &#9733; &#9733; &#9733;</span></div>
+                     </div>
+                     <div class="row">
+                        <div class= "col-sm-7">Overall</div>
+                        <div class= "col-sm-5"><span class="stars ">&#9733; &#9733; &#9733; &#9733; &#9733;</span></div>
+                     </div>
+                     <div class="row">
+                        <div class= "col-sm-7">Overall</div>
+                        <div class= "col-sm-5"><span class="stars ">&#9733; &#9733; &#9733; &#9733; &#9733;</span></div>
+                     </div>
+                  </div>
+                  <hr/>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <div class="modal fade" id="otherModal" role="dialog" >
+      <div class="modal-dialog ">
+         <!-- Modal content-->
+         <div class="modal-content modal-btn">
+            <div >
+               <button type="button" class="close modal-btn" data-dismiss="modal">&times;</button>
+               &nbsp;
+               <h4 class="modal-custom-title">
+                  OTHER CATEGORIES
+               </h4>
+            </div>
+            <div class="modal-body row null-padding-top">
+               <div class="modal-scroll scroll-height">
+                  <div class="row">
+                     <div class="col-sm-6" id="populateMany">
+                     </div>
+                     <div class="col-sm-6" id="populateMany2">
+                     </div>
+                  </div>
+               </div>
+               <hr/>
+            </div>
+         </div>
+      </div>
+   </body>
+   <script type="text/javascript" src="js/jquery.min.js"></script>
+   <script type="text/javascript" src="js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="js/custom.js"></script>
+   <script type="text/javascript"></script>
 </html>
